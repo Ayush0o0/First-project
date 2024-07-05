@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 600px;
+            width: 1000px;
+            border:30px solid purple;
+        }
+        #button{
+            margin-bottom: 800px;
+            margin-left: 300px;
+            background-color:coral;
+            height:35px;
+            width:200px;
+            border-radius: 10px;
+        }   
+        #one{
+            margin-top: -400px;
+            margin-left: 900px;
+        }
+        img{
+            height:600px;
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+<img src="image/metro image.png">
+</div>
+<div id="one">
+<button id="button" onclick="start()">Start your journey with delhi metro</button>  
+</div>  
+<script>
+function start(){
+let a = prompt("please select your current metrop station from the following: ('Rajiv chowk','Kashmiri gate','Gokalpuri','Shiv vihar')");
+
+
+
+
+if(a=='Rajiv chowk'){
+let b = prompt("please select your metro line('Pink','Violet','Red')");
+if(b=='Pink'){
+let c = prompt("These are the next stations: ('mojpur','welcome','seelampur') seelampur is the last station of the pink line.");
+if(c=='mojpur'){
+document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+        +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+        +"<br>"+"|____Your Destination:"+" "+"|"+" Mojpur____________|"
+        +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else if(c=='welcome'){
+
+document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+        +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+        +"<br>"+"|____Your Destination:"+" "+"|"+" welcome___________|"
+        +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else{
+document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+        +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+        +"<br>"+"|____Your Destination:"+" "+"|"+" seelampur_________|"
+        +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}
+}else if(b=='Violet'){
+let d = prompt("These are the next stations: ('kalka jii','jhori enclave','laxmi nagar') laxmi nagar is the last station of the violet line.");
+if(d=='kalka jii'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" kalka jii_________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else if(d=='jhori enclave'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+        +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" jhori enclave_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");    
+}else{
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" laxmi nagar_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}  
+}else{
+let e = prompt("these are the next stations: ('zafrabad','rithala','shahdra') shahdra is the last station in red line."); 
+if(e=='zafrabad'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" zafrabad__________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");    
+}else if(e=='rithala'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" rithala___________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else{
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Rajiv chowk________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" shahdra____________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}
+
+}
+
+}else if(a=='Kashmiri gate'){
+let f = prompt("please select your metro line('orange','green','yellow')");
+if(f=='orange'){
+let g = prompt("These are the next stations: ('nirman vihar','chandani chowk','lal quila') lal quila is the last station of the orange line.");    
+if(g=='nirman vihar'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" nirman vihar_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(g=='chandani chowk'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" chandani chowk_____|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else{
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" lal quila__________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}  
+}else if(f=='green'){
+let h = prompt("These are the next stations: ('karol bagh','shahdi pur','rohini') rohini is the last station of the green line");
+if(h=='karol bagh'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" karol bagh_________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(h=='shahdi pur'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" shahdi pur_________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");     
+}else{
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" rohini_____________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}
+}else{
+let i = prompt("These are the next stations: ('azadpur','jhangir puri','model town') model town is the last station of the yellow line");
+if(i=='azadpur'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" azadpur____________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(i=='jhangir puri'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" jhangir puri_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else{
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" model town_________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}
+
+}
+}else if(a=='Gokalpuri'){
+let j = prompt("please select your metro line('purple','blue','black')");
+if(j=='purple'){
+let k = prompt("These are the next stations: ('adarsh nagar','ito','vidhan sabha') vidhan sabha is the last station of the purple line");
+if(k=='adarsh nagar'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" adarsh nagar_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(k=='ito'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" ito________________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(k=='vidhan sabha'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" Kashmiri gate______|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" vidhan sabha_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else{
+    document.write("envalid station please choose the correct station");
+} 
+}else if(j=='blue'){
+let l = prompt("These are the next stations: ('civil lines','chawri bazar','patel chowk') patel chowk is the last station of the blue line");
+if(l=='civil lines'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" civil lines________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(l=='chawri bazar'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" chawri bazar________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(l=='patel chowk'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" patel chowk________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else{
+    document.write("envalid station please choose the correct station");
+}
+}else if(j=='black'){
+let m = prompt("These are the next stations: ('udyog bhawan','jor bagh','aiims') aiims is the last station of the black line");  
+if(m=='udyog bhawan'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" udyog bhawan_______|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");     
+}else if(m=='jor bagh'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" jorbagh___________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else if(m=='aiims'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" gokalpuri___________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" aiims______________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|"); 
+}else{
+    document.write("envalid station please choose the correct station");
+} 
+
+}
+}else if(a=='Shiv vihar'){
+let n = prompt("please select your metro line('white','skyblue','brown')");
+if(n=='white'){
+let o = prompt("These are the next stations: ('hauz khas','green park','sultanpur') sultanpur is the last station of the white line"); 
+if(o=='hauz khas'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" hauz khas__________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");     
+}else if(o=='green park'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" green park_________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");        
+}else if(o=='sultanpur'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" sultanpur__________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");    
+}else{
+    document.write("envalid station please choose the correct station");
+}   
+}else if(n=='skyblue'){
+let p = prompt("These are the next stations: ('saket','qutab minar','ghitorni') ghitorni is the last station of the skyblue line"); 
+if(p=='saket'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" saket______________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");    
+}else if(p=='qutab minar'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" qutab minar________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else if(p=='ghitorni'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" ghitorni___________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else{
+    document.write("envalid station please choose the correct station"); 
+}
+}else if(n=='brown'){
+let q = prompt("These are the next stations: ('palam','nawada','dwarka') dwarka is the last station of the brown line");
+if(q=='palam'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" palam______________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");    
+}else if(q=='nawada'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" nawada_____________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else if(q=='dwarka'){
+    document.write("_______________________________________"+"<br>"+"|________Delhi Metro at your service________|"
+         +"<br>"+"|_______Your location:"+" "+"|"+" shiv vihar__________|"
+         +"<br>"+"|____Your Destination:"+" "+"|"+" dwarka_____________|"
+         +"<br>"+"|_________Total price:"+" "+"|"+" 40rs only.__________|");
+}else{
+    document.write("envalid station please choose the correct station");   
+}
+}
+}
+}
+</script>
+</body>
+</html>
