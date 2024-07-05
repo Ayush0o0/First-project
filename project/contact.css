@@ -1,0 +1,632 @@
+
+.nav {
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: transform 300ms;
+    z-index: 1;
+    font-family: "Satisfy", sans-serif;
+
+}
+
+.hide {
+    transform: translateY(-150px);
+}
+
+.about {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: -380px;
+    top: 30px;
+}
+
+.product {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: -200px;
+    top: 30px;
+}
+
+.eatcurious {
+    height: 145px;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+    position: relative;
+    /* border: 1px solid red; */
+    top: 40px;
+
+
+}
+
+#EATCURIOUS {
+    /* margin-top: -25px; */
+    height: 170PX;
+    font-family: "Satisfy", sans-serif;
+
+    /* text-shadow: 5px 5px 10px red; */
+
+
+}
+
+.recipes {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: 200px;
+    top: 30px;
+}
+
+.contact {
+    font-size: 25px;
+    color: #042f1a;
+    font-weight: 700;
+    position: relative;
+    left: 390px;
+    top: 30px;
+
+}
+
+.CONTACT {
+    height: 50px;
+    width: 200px;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    padding-left: 18px;
+    padding-top: 3px;
+    border-radius: 5px;
+    background-color: #ff73b5;
+}
+
+.first {
+    height: 600px;
+    width: 100%;
+    background-color: #042f1a;
+    /* border: 1px solid white; */
+}
+
+.second {
+    height: 1328px;
+    width: 100%;
+    background-color: #042f1a;
+    /* border: 1px dashed white; */
+}
+
+.letschat {
+    height: 250px;
+    width: 800px;
+    /* border: 1px solid white; */
+    position: absolute;
+    left: 30%;
+    top: 280px;
+}
+
+#genralenquiry {
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 90px;
+    position: absolute;
+    top: 800px;
+    left: 130px;
+
+}
+
+#paragraph {
+    color: white;
+    font-size: 25px;
+    word-spacing: -1px;
+    position: absolute;
+    top: 1020px;
+    left: 130px;
+}
+
+#contactemail {
+    color: white;
+    font-size: 25px;
+    word-spacing: -1px;
+    position: absolute;
+    top: 1150px;
+    left: 130px;
+
+}
+
+#hortonlodge {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1250px;
+    left: 130px;
+}
+
+#brafield {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1300px;
+    left: 130px;
+}
+
+#horton {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1350px;
+    left: 130px;
+}
+
+#nn7 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1400px;
+    left: 130px;
+}
+
+#fullname {
+    position: absolute;
+    height: 80px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    top: 815px;
+    left: 950px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+
+
+}
+
+#fullname::placeholder {
+    font-size: 30px;
+    padding-left: 30px;
+    color: #042f1a;
+
+}
+
+#email {
+    position: absolute;
+    height: 80px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* opacity: 0.1; */
+    top: 910px;
+    left: 950px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+#email::placeholder {
+    font-size: 30px;
+    padding-left: 30px;
+    color: #042f1a;
+
+}
+
+#contactno {
+    position: absolute;
+    height: 80px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    top: 1005px;
+    left: 950px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+#contactno::placeholder {
+    font-size: 30px;
+    padding-left: 30px;
+    color: #042f1a;
+}
+
+#checkbox {
+    height: 80px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1100px;
+    left: 950px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* opacity:0.1; */
+}
+
+#textbox {
+    width: 900px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* opacity: 0.1; */
+    position: absolute;
+    top: 1195px;
+    left: 950px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#textarea::placeholder {
+    font-size: 30px;
+    padding-left: 30px;
+    color: #042f1a;
+}
+
+#sendenquiry {
+    height: 70px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #ff73b5;
+    border: 1px solid #ff73b5;
+    font-weight: 900;
+    font-size: 30px;
+    color: #042f1a;
+    position: absolute;
+    top: 1470px;
+    left: 950px;
+}
+
+#firsthr {
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 600px;
+    left: -5px;
+}
+
+.third {
+    height: 1500px;
+    width: 100%;
+    background-color: #042f1a;
+}
+
+#plus1 {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    clip-path: polygon(50% 35%, 100% 25%, 100% 75%, 50% 65%, 0% 75%, 0% 25%);
+    position: absolute;
+}
+
+#plus2 {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    clip-path: polygon(50% 35%, 100% 25%, 100% 75%, 50% 65%, 0% 75%, 0% 25%);
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.plusminus1 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    /* border: 1px dashed  white; */
+    top: -30px;
+    left: 1850px;
+}
+
+#secondhr {
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: -4px;
+    top: 1900px;
+}
+
+.quesfirst {
+    height: 200px;
+    width: 100%;
+    /* border: 1px dashed white; */
+    overflow: hidden;
+}
+
+#quesfirst {
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 1960px;
+    left: 150px;
+}
+
+#answerfirst {
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    /* position: absolute; */
+    margin-top: 190px;
+    margin-left: 140px;
+}
+
+.questwo {
+    height: 200px;
+    width: 100%;
+    /* border: 1px dashed white; */
+    overflow: hidden;
+}
+
+#thirdhr {
+    color: white;
+    /* width: 100%;
+    position: absolute;
+    left:-4px;
+    top:2100px; */
+}
+
+#questwo {
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 2200px;
+    left: 150px;
+
+}
+
+#answertwo {
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 190px;
+    margin-left: 140px;
+}
+
+.plusminus2 {
+    position: relative;
+    top: -40px;
+    left: 1850px;
+}
+
+#fourthhr {
+    color: white;
+}
+
+.questhree {
+    height: 250px;
+    width: 100%;
+    /* border: 1px dashed white; */
+    overflow: hidden;
+}
+
+.plusminus3 {
+    position: relative;
+    top: -100px;
+    left: 1850px;
+}
+
+#questhree {
+    color: white;
+    font-weight: 900px;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 2450px;
+    left: 150px;
+    line-height: 80px;
+}
+
+#answerthree {
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    margin-left: 140px;
+    margin-top: 250px;
+}
+
+#fifthhr {
+    color: white;
+}
+
+.scroller {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 600px;
+    left: -40px;
+    /* z-index: 1; */
+}
+
+#SCROLLER {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+
+.lastcurve {
+    position: absolute;
+    left: -1px;
+    top: 2870px;
+
+}
+
+/* #LASTCURVE{
+    border: 1px dashed red;
+} */
+.lastbox {
+    height: 450px;
+    width: 100%;
+    background-color: #ff73b5;
+    /* border: 1px dashed red; */
+    position: absolute;
+    top: 3360px;
+    left: -0px;
+}
+
+#feedmemore {
+    /* border: 1px dashed red; */
+    position: absolute;
+    top: 2950px;
+    left: 400px;
+
+}
+
+#fullname2 {
+    height: 80px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ff73b5;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    font-size: 25px;
+}
+
+#emailaddress2 {
+    height: 80px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ff73b5;
+    position: absolute;
+    top: 80px;
+    left: 950px;
+    font-size: 25px;
+
+}
+
+#signup {
+    height: 80px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #042f1a;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 80px;
+    left: 1750px;
+
+}
+
+#sixthhr {
+    /* color: white; */
+    margin-top: 250px;
+}
+
+.accordion {
+    height: 250px;
+    width: 100%;
+    background-color: #042f1a;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    line-height: 80px;
+    text-align: left;
+    padding: 50px;
+    border: 1px solid #042f1a;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.panel {
+    color: white;
+    background-color: #042f1a;
+    display: none;
+    overflow: hidden;
+    font-size: 25px;
+    text-align: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 50px;
+    float: right;
+    margin-left: 5px;
+}    
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+.privacy {
+    height: 70px;
+    width: 500px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 270px;
+    left: 180px;
+}
+#instagram{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+}
+#facebook{
+    height: 40px;
+    width:30px;
+    position: absolute;
+    left: 80px;
+}
+#linkedin {
+    position: absolute;
+    left: 160px;
+    height: 40px;
+    width: 30px;
+}
+#policy {
+    color: #042f1a;
+    font-size: 25px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 240px;
+}
+.designby {
+    height: 70px;
+    width: 550px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 270px;
+    left: 1400px;
+}
+#circleC {
+    position: absolute;
+    height: 40px;
+    width: 30px;
+}
+#eatcurious2024 {
+    color: #042f1a;
+    font-size: 25px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 40px;
+
+}
+
+#designbyayush {
+    color: #042f1a;
+    font-size: 25px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 273px;
+
+
+}

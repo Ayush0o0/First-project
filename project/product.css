@@ -1,0 +1,288 @@
+body {
+    overflow-x: hidden;
+}
+
+.first {
+    height: 1800px;
+    width: 100%;
+    background-color: #042f1a;
+    /* border: 1px dashed white; */
+
+}
+
+.nav {
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: transform 300ms;
+    z-index: 1;
+    font-family: "Satisfy", sans-serif;
+
+}
+
+.hide {
+    transform: translateY(-150px);
+}
+
+.about {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: -380px;
+    top: 30px;
+}
+
+.product {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: -200px;
+    top: 30px;
+}
+
+.eatcurious {
+    height: 145px;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+    position: relative;
+    /* border: 1px solid red; */
+    top: 40px;
+
+
+}
+
+#EATCURIOUS {
+    /* margin-top: -25px; */
+    height: 170PX;
+    font-family: "Satisfy", sans-serif;
+
+    /* text-shadow: 5px 5px 10px red; */
+
+
+}
+
+.recipes {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: 200px;
+    top: 30px;
+}
+
+.contact {
+    font-size: 25px;
+    color: #042f1a;
+    font-weight: 700;
+    position: relative;
+    left: 390px;
+    top: 30px;
+
+}
+
+.CONTACT {
+    height: 50px;
+    width: 200px;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    padding-left: 18px;
+    padding-top: 3px;
+    border-radius: 5px;
+    background-color: #ff73b5;
+}
+
+#mince {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 38%;
+    top: 150px;
+}
+
+#pieces {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 350px;
+    left: 29%;
+
+}
+
+#BBQ {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 550px;
+    left: 29%;
+
+}
+
+#original {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 750px;
+    left: 20%;
+}
+
+#tandoori {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 950px;
+    left: 10%;
+
+}
+
+#dmince {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 1150px;
+    left: 14%;
+
+}
+
+#dpieces {
+    font-size: 190px;
+    font-weight: 900;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 1350px;
+    left: 13.8%;
+
+}
+
+#images {
+    overflow: hidden;
+}
+
+#image1 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    /* border: 1px dashed white; */
+
+
+}
+
+#image2 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: -250px;
+    left: 450px;
+    /* border: 1px dashed red; */
+
+}
+
+#image3 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: -250px;
+    left: 1050px;
+    /* border: 1px dashed blue; */
+}
+
+#image4 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: -200px;
+    left: 1850px;
+    /* border: 1px dashed white; */
+}
+
+#image5 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 30%;
+    left: -5%;
+    /* border: 1px dashed coral; */
+}
+
+#image6 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 750px;
+    left: -200px;
+    /* border: 1px dashed skyblue; */
+}
+
+#image7 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 750px;
+    left: 450px;
+    /* border: 1px dashed lightcoral; */
+}
+
+#image8 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 750px;
+    left: 1050px;
+    /* border: 1px dashed wheat; */
+}
+
+#image9 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 750px;
+    left: 1850px;
+    /* border: 1px dashed lightseagreen; */
+}
+
+#image10 {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 30%;
+    left: 85%;
+    /* border: 1px dashed lightsalmon; */
+}

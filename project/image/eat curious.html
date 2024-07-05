@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
+    <script src="https://kit.fontawesome.com/bad854670e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy|Oswald&effect=neon">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid red; */
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            transition: transform 300ms;
+            z-index: 1;
+            font-family: "Satisfy", sans-serif;
+
+        }
+
+        .hide {
+            transform: translateY(-150px);
+        }
+
+        .box {
+            height: 1700px;
+            width: 100%;
+            background-color: #042f1a;
+            /* border: 1px solid red; */
+        }
+
+        .about {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+            position: relative;
+            left: -380px;
+            top: 30px;
+        }
+
+        .product {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+            position: relative;
+            left: -200px;
+            top: 30px;
+        }
+
+        .eatcurious {
+            height: 145px;
+            color: white;
+            font-size: 70px;
+            line-height: 60px;
+            position: relative;
+            /* border: 1px solid red; */
+            top: 40px;
+
+
+        }
+
+        #EATCURIOUS {
+            /* margin-top: -25px; */
+            height: 170PX;
+            font-family: "Satisfy", sans-serif;
+
+            /* text-shadow: 5px 5px 10px red; */
+
+
+        }
+
+        .recipes {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+            position: relative;
+            left: 200px;
+            top: 30px;
+        }
+
+        .contact {
+            font-size: 25px;
+            color: #042f1a;
+            font-weight: 700;
+            position: relative;
+            left: 390px;
+            top: 30px;
+
+        }
+
+        .CONTACT {
+            height: 50px;
+            width: 200px;
+            /* border: 1px solid white; */
+            box-sizing: border-box;
+            padding-left: 18px;
+            padding-top: 3px;
+            border-radius: 5px;
+            background-color: #ff73b5;
+        }
+
+
+
+        .meat {
+            color: white;
+            font-size: 360px;
+            font-weight: 900;
+            transform: scale(1, 1.5);
+            height: 300px;
+            width: 1500px;
+            /* border:1px solid white; */
+            position: absolute;
+            top: 130px;
+            left: 280px;
+            font-family: "Oswald", sans-serif;
+
+        }
+
+        /* .image{
+            height: 550px;
+            width: 550px;
+            border: 1px solid white;
+            position: absolute;
+            top:250px;
+            left:760px;
+        } */
+        #picture {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            top: 350px;
+            left: 760px;
+
+        }
+
+        .yourmind {
+            color: white;
+            font-size: 330px;
+            font-weight: 900;
+            font-family: "Oswald", sans-serif;
+            transform: scale(1, 2);
+            height: 300px;
+            width: 1700px;
+            position: absolute;
+            /* border: 1px solid lightseagreen; */
+            top: 550px;
+            left: 300px;
+            /* display: none; */
+        }
+
+        .second {
+            height: 100vh;
+            width: 100%;
+            background-color: #ff73b5;
+        }
+
+        .wave {
+            position: absolute;
+            top: 1270px;
+            right: 0px;
+            width: 2080px;
+        }
+
+        .firstheading {
+            height: 200px;
+            width: 650px;
+            font-size: 50px;
+            position: absolute;
+            top: 2000px;
+            left: 100px;
+            font-weight: 800;
+            line-height: 40px;
+            transform: scale(1, 1.5);
+            color: rgb(0, 39, 0);
+
+        }
+
+        .firstpara {
+            height: 400px;
+            width: 610px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            color: black;
+            top: 2100px;
+            left: -65px;
+        }
+
+        #pizzaboy {
+            position: absolute;
+            top: 1700px;
+            left: 1050px;
+            width: 900px;
+            height: 700px;
+        }
+
+        .third {
+            height: 100vh;
+            width: 100%;
+            background-image: url(image/image\ 1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        .fourth {
+            height: 100vh;
+            width: 100%;
+            background-image: url(image/image\ 2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: scroll; */
+
+        }
+
+        .fifth {
+            height: 100vh;
+            width: 100%;
+            background-image: url(image/image\ 3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .sixth {
+            height: 1300px;
+            width: 100%;
+            background-color: #fff6f6;
+
+            justify-content: center;
+            align-items: center;
+            /* position: absolute; */
+        }
+
+        .one {
+            /* border: 1px solid black; */
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 200px;
+            top: 5800px;
+        }
+
+        .two {
+            /* border: 1px solid black; */
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 685px;
+            top: 5800px;
+        }
+
+        .three {
+            /* border: 1px solid black; */
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 1120px;
+            top: 5800px;
+        }
+
+        .four {
+            /* border: 1px solid black; */
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 1550px;
+            top: 5800px;
+        }
+
+        .text {
+            height: 200px;
+            width: 400px;
+            /* border:1px solid black; */
+            position: absolute;
+            top: 80px;
+            left: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #features {
+            color: #042f1a;
+            font-size: 60px;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 50px;
+            position: absolute;
+            top: 5500px;
+            /* border: 1px solid black; */
+            height: 200px;
+        }
+
+        #one {
+            height: 300px;
+            width: 300px;
+            /* top:5800px; */
+        }
+
+        #two {
+            height: 300px;
+            width: 300px;
+            /* top:5800px; */
+        }
+
+        #three {
+            height: 300px;
+            width: 300px;
+            /* top:5800px; */
+        }
+
+        #four {
+            height: 300px;
+            width: 300p30;
+            /* top:5800px; */
+        }
+
+        .textone {
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            /* border: 1px solid black; */
+            top: 6160px;
+            left: 200px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #042f1a;
+
+        }
+
+        .texttwo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            /* border: 1px solid black; */
+            top: 6160px;
+            left: 650px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #042f1a;
+
+
+        }
+
+        .textthree {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            /* border: 1px solid black; */
+            top: 6160px;
+            left: 1100px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #042f1a;
+
+        }
+
+        .textfour {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            /* border: 1px solid black; */
+            top: 6160px;
+            left: 1550px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #042f1a;
+            ;
+
+        }
+
+        .textpara1 {
+            height: 100px;
+            width: 450px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 6230px;
+            left: 90px;
+            font-size: 25px;
+        }
+
+        .textpara2 {
+            height: 100px;
+            width: 400px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 6230px;
+            left: 630px;
+            font-size: 25px;
+        }
+
+        .textpara3 {
+            height: 100px;
+            width: 450px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 6230px;
+            left: 1070px;
+            font-size: 25px;
+        }
+
+        .textpara4 {
+            height: 100px;
+            width: 450px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 6230px;
+            left: 1525px;
+            font-size: 25px;
+        }
+
+        .seventh {
+            height: 410px;
+            width: 100%;
+            background-color: #fff6f6;
+            /* border-top-left-radius:30% ; */
+            /* border-top-right-radius:30% ; */
+            /* overflow-x: hidden; */
+        }
+
+        .curve {
+            margin-left: -12px;
+            margin-top: -90px;
+
+        }
+
+        .eighth {
+            height: 4000px;
+            width: 100%;
+            background-color: #042f1a;
+        }
+
+        .curvee {
+            position: absolute;
+            top: 6700px;
+            fill-opacity: 1;
+            /* margin-left: -12px; */
+            /* background-color: #042f1a; */
+            /* border: 2px solid red; */
+        }
+
+        .text_path {
+            font-size: 250px;
+            fill: white;
+            font-weight: 900;
+        }
+
+        #ayushh {
+            /* border: 1px solid red; */
+            margin-left: -12px;
+        }
+
+        .menu1 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #1abe71;
+            position: absolute;
+            top: 7400px;
+            left: 120px;
+            border-radius: 10px;
+            background-color: #1abe71;
+            font-size: 120px;
+            font-weight: 900;
+            overflow: hidden;
+
+        }
+
+        .menu2 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #fcb900;
+            position: absolute;
+            top: 7400px;
+            left: 735px;
+            border-radius: 10px;
+            background-color: #fcb900;
+            font-size: 120px;
+            font-weight: 900;
+            overflow: hidden;
+
+
+        }
+
+        .menu3 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #1abe71;
+            position: absolute;
+            top: 7400px;
+            left: 1350px;
+            border-radius: 10px;
+            background-color: #1abe71;
+            font-size: 120px;
+            font-weight: 900;
+            overflow: hidden;
+        }
+
+        .menu4 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #1abe71;
+            position: absolute;
+            top: 8050px;
+            left: 120px;
+            border-radius: 10px;
+            background-color: #1abe71;
+            /* font-size: 120px; */
+            font-weight: 900;
+            overflow: hidden;
+        }
+
+        .menu5 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #f78da7;
+            position: absolute;
+            top: 8050px;
+            left: 735px;
+            border-radius: 10px;
+            background-color: #f78da7;
+            /* font-size: 120px; */
+            font-weight: 900;
+            overflow: hidden;
+
+        }
+
+        .menu6 {
+            height: 600px;
+            width: 550px;
+            border: 2px solid #1abe71;
+            position: absolute;
+            top: 8050px;
+            left: 1350px;
+            border-radius: 10px;
+            background-color: #1abe71;
+            font-size: 120px;
+            font-weight: 900;
+            overflow: hidden;
+        }
+
+        #PIECES {
+            position: absolute;
+            top: 100px;
+            left: 60px;
+        }
+
+        #MINCE {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+        }
+
+        #NEGG {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        #TENDERS {
+            position: absolute;
+            top: 100px;
+            left: 15px;
+            font-size: 110px;
+
+
+        }
+
+        #BANGERS {
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            font-size: 110px;
+
+        }
+
+        #FILLETS {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+
+        }
+
+        #CURIOUS1 {
+            font-size: 120px;
+
+        }
+
+        #CURIOUS2 {
+            font-size: 120px;
+        }
+
+        #MENU1PIC {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 280px;
+            left: 50px;
+        }
+
+        #MENU2PIC {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 280px;
+            left: 30px;
+
+        }
+
+        #MENU3PIC {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            top: 280px;
+            left: 50px;
+        }
+
+        #MENU4PIC {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 280px;
+            left: 50px;
+        }
+
+        #MENU5PIC {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 280px;
+            left: 10px;
+        }
+
+        #MENU6PIC {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            top: 280px;
+            left: 30px;
+
+        }
+
+        .viewall {
+            height: 50px;
+            width: 140px;
+            position: absolute;
+            background-color: #ff73b5;
+            color: #042f1a;
+            font-size: 25px;
+            font-weight: 900;
+            padding: 5px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            border-radius: 5px;
+            top: 8720px;
+            left: 950px;
+        }
+
+        .flower {
+            position: absolute;
+            top: 9200px;
+            left: 100px;
+
+        }
+
+        #FLOWER {
+            height: 550px;
+            width: 900px;
+            border-radius: 10px;
+        }
+
+        .flowerpara {
+            height: 600px;
+            width: 720px;
+            /* border: 1px solid crimson; */
+            position: absolute;
+            top: 9080px;
+            left: 1200px;
+
+        }
+
+        #flowerparaheading {
+            font-weight: 900;
+            font-size: 100px;
+            color: white;
+            line-height: 80px;
+            word-spacing: -30px;
+            height: 500px;
+        }
+
+        #FLOWERPARA {
+            color: white;
+            font-size: 23px;
+            word-spacing: -5px;
+            width: 800px;
+
+        }
+
+        .visitsyanfarms {
+            height: 60px;
+            width: 340px;
+            background-color: #ff73b5;
+            color: #042f1a;
+            position: absolute;
+            top: 9900px;
+            left: 1200px;
+            font-size: 30px;
+            font-weight: 900;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-left: 25px;
+            padding-top: 7px;
+
+        }
+
+        .menucontainer {
+            height: 800px;
+            width: 2000px;
+            /* border: 2px solid white; */
+            position: absolute;
+            top: 10200px;
+            overflow-x: scroll;
+        }
+
+        .menuone {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            border-radius: 10px;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar1 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildA {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildB {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .barmince {
+            height: 35px;
+            width: 95px;
+            background-color: #fcb900;
+            font-weight: 900;
+            color: #042f1a;
+            box-sizing: border-box;
+            padding-left: 15px;
+            padding-top: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            transform: skewY(5deg);
+            transition-property: all;
+        }
+
+        .na {
+            height: 50px;
+            width: 60px;
+            /* border: 1px solid black; */
+            font-size: 30px;
+            position: absolute;
+            top: 150px;
+            left: 25px;
+        }
+
+        .menutwo {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+        #menutwoimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+        }
+
+        .menuthree {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            position: absolute;
+            top: 25px;
+            left: 480px;
+            border-radius: 10px;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar2 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildC {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildD {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menufour {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 480px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+        #menufourimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .menufive {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 940px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: margin-left 0.5s;
+        }
+
+        .bar3 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildE {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildF {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menusix {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 940px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+
+        }
+
+        #menusiximage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .menuseven {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 1400px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar4 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildG {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildH {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menueight {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 1400px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        #menueightimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .menunine {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 1860px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar5 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildI {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildJ {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menuten {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 1860px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+        #menutenimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .menueleven {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 2320px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar6 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildK {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildL {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menutwelve {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 2320px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+        #menutwelveimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .menuthirteen {
+            height: 750px;
+            /* width: 450px; */
+            background-color: white;
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 2780px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: margin-left 0.5s;
+
+        }
+
+        .bar7 {
+            height: 70px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 60px;
+            left: 25px;
+            border-radius: 10px;
+
+        }
+
+        .barchildM {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid red; */
+            position: absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 9px;
+            padding-top: 10px;
+            background-color: forestgreen;
+        }
+
+        .barchildN {
+            height: 70px;
+            width: 199px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            left: 200px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 10px;
+            background-color: rgba(216, 224, 224, 0.723);
+
+        }
+
+        .menufourteen {
+            height: 750px;
+            width: 450px;
+            /* background-color: white; */
+            border: 1px solid red;
+            position: absolute;
+            top: 25px;
+            left: 2780px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+        #menufourteenimage {
+            height: 1000px;
+            width: 1200px;
+            position: absolute;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            left: -400px;
+            top: -100px;
+
+        }
+
+        .scrollhidder {
+            height: 40px;
+            width: 2000px;
+            position: absolute;
+            /* border: 1px solid white; */
+            background-color: #042f1a;
+            top: 10975px;
+        }
+
+        .nineth {
+            height: 100vh;
+            width: 100%;
+            background-image: url(image/image\ 4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .letschat {
+            height: 60px;
+            width: 220px;
+            border-radius: 7px;
+            position: absolute;
+            top: 11420px;
+            left: 900px;
+            /* border: 1px solid black; */
+        }
+
+        .tenth {
+            height: 500px;
+            width: 100%;
+            /* background-color: #ff73b5; */
+            /* border: 2px solid black; */
+            overflow: hidden;
+        }
+
+        .lastcurve {
+            /* margin-left: -4px; */
+            /* margin-top: -90px; */
+            /* height: 0; */
+            /* width:200px; */
+            position: absolute;
+            top: 11500;
+            left: 0px;
+            /* border: 1px solid red; */
+            background-color: #fff6f6;
+        }
+
+        #path {
+            border: 1px solid red;
+        }
+
+        #LASTCURVETEXT {
+            /* border: 1PX solid red; */
+            height: 650PX;
+        }
+
+        .eleventh {
+            height: 600px;
+            width: 100%;
+            background-color: #ff73b5;
+            /* border: 1px solid red; */
+            overflow: hidden;
+        }
+
+        .curvetext {
+            position: absolute;
+            top: 12070px;
+            left: -5px;
+            word-spacing: -5px;
+            /* overflow: hidden; */
+        }
+
+        .lasttext_path {
+            font-size: 250px;
+            fill: #042f1a;
+            font-weight: 900;
+        }
+
+        .twelveth {
+            height: 63px;
+            width: 100%;
+            /* border: 1px solid red; */
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .marquee__part {
+            flex-shrink: 0;
+            /* padding-bottom: 50px; */
+            font-smooth: always;
+        }
+
+        .marquee {
+            /* background: #ff73b5; */
+            background-color: #ff73b5;
+            color: #eee;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.667vw;
+            padding: 32px 0;
+            height: 20px;
+            width: 100%;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .marquee__inner {
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            display: flex;
+            flex: auto;
+            flex-direction: row;
+        }
+
+        .spacer {
+            height: 150px;
+        }
+
+        #bottombartext {
+            font-weight: 800;
+            font-size: 30px;
+            word-spacing: -3px;
+            /* margin-top: px; */
+            color: #042f1a;
+            width: fit-content;
+            margin-top: -20px;
+        }
+
+        #marquee {
+            height: 600px;
+        }
+
+        .scroller {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            position: fixed;
+            top: 600px;
+            left: -40px;
+            z-index: 1;
+        }
+
+        #SCROLLER {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        #fullname {
+            height: 80px;
+            width: 700px;
+            background-color: white;
+            border: 1px solid #ff73b5;
+            position: absolute;
+            top: 12770px;
+            left: 200px;
+            border-radius: 10px;
+            font-size: 25px;
+            text-shadow: 10px 10px 10px red;
+
+        }
+
+        #email {
+            height: 80px;
+            width: 700px;
+            background-color: white;
+            border: 1px solid #ff73b5;
+            position: absolute;
+            top: 12770px;
+            left: 1000px;
+            border-radius: 10px;
+            font-size: 25px;
+            text-shadow: 10px 10px 10px red;
+
+        }
+
+        ::placeholder {
+            font-size: 25px;
+            position: absolute;
+            left: 50px;
+            top: 25px;
+        }
+
+        .signup {
+            height: 80px;
+            width: 150px;
+            border-radius: 10px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 12770px;
+            left: 1750px;
+            background-color: #042f1a;
+            color: white;
+            font-size: 33px;
+            font-weight: 700;
+            box-sizing: border-box;
+            padding: 8px;
+
+        }
+
+        #horizontal {
+            margin-top: 400px;
+
+        }
+
+        .privacy {
+            height: 70px;
+            width: 500px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 13000px;
+            left: 180px;
+        }
+
+        #instagram {
+            /* border:1px solid red; */
+            height: 40px;
+            width: 30px;
+            position: absolute;
+
+        }
+
+        #facebook {
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            height: 40px;
+            width: 30px;
+
+        }
+
+        #linkedin {
+            position: absolute;
+            left: 160px;
+            height: 40px;
+            width: 30px;
+        }
+
+        #policy {
+            color: #042f1a;
+            font-size: 25px;
+            position: absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            left: 240px;
+        }
+
+        .designby {
+            height: 70px;
+            width: 550px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 13000px;
+            left: 1400px;
+        }
+
+        #circleC {
+            position: absolute;
+            height: 40px;
+            width: 30px;
+        }
+
+        #eatcurious2024 {
+            color: #042f1a;
+            font-size: 25px;
+            position: absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            left: 40px;
+
+        }
+
+        #designbyayush {
+            color: #042f1a;
+            font-size: 25px;
+            position: absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            left: 273px;
+
+
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container-fluid start">
+        <div id="col1" class="row">
+            <div class="col box">
+                <div class="nav">
+                    <ul class="nav justify-content-center ">
+                        <li class="nav-item">
+                            <a class="nav-link active about" aria-current="page" href="#" onclick="about()">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link product" href="product.html">PRODUCTS</a>
+                        <li class="nav-item">
+                            <a class="nav-link eatcurious " href="eat curious.html">
+                                <pre id="EATCURIOUS">    EAT<br>CURIOUS</pre>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link recipes" href="#" onclick="recipe()">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact" href="contact us.html" tabindex="-1" aria-disabled="true">
+                                <div class="CONTACT">CONTACT US</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="col2" class="col first">
+                <div class=" animate__animated  animate__bounceIn meat">MEAT-FREE</div>
+                <!-- <div class="image"> -->
+                <img class=" animate__animated  animate__bounceIn  animate__delay-0.5s" src="image/dish1.png"
+                    id="picture">
+                <!-- </div> -->
+                <div class=" animate__animated  animate__bounceIn  animate__delay-0.8s yourmind">YOUR MIND</div>
+                <div class="scroller">
+                    <img id="SCROLLER" src="image/scroller.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="col3" class="col second">
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ff73b5" fill-opacity="1" d="M0,160L9.2,144C18.5,128,37,
+                    96,55,112C73.8,128,92,192,111,229.3C129.2,267,148,277,166,256C184.6,235,203,181,222,181.3C240,181,258,235,277,229.3C295.4,224,314,160,
+                    332,160C350.8,160,369,224,388,240C406.2,256,425,224,443,218.7C461.5,213,480,235,498,218.7C516.9,203,535,149,554,133.3C572.3,117,591,139,
+                    609,138.7C627.7,139,646,117,665,128C683.1,139,702,181,720,202.7C738.5,224,757,224,775,202.7C793.8,181,812,139,831,144C849.2,149,868,203,
+                    886,213.3C904.6,224,923,192,942,176C960,160,978,160,997,176C1015.4,192,1034,224,1052,240C1070.8,256,1089,256,1108,240C1126.2,224,1145,192,
+                    1163,165.3C1181.5,139,1200,117,1218,133.3C1236.9,149,1255,203,1274,224C1292.3,245,1311,235,1329,234.7C1347.7,235,1366,245,1385,
+                    245.3C1403.1,245,1422,235,1431,229.3L1440,224L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,
+                    1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,
+                    320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,
+                    320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,
+                    320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,
+                    320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"></path>
+                </svg>
+                <div class="curiousbyname">
+                    <p class="firstheading">
+                        CURIOUS... BY NAME, BY
+                        NATURE
+                    </p>
+                    <pre class="firstpara">
+                         It’s what inspires us to whip up, throw
+                         together, tear, shake, and break the rules – 
+                         on a mission to redefine food for a new
+                         generation.</pre>
+                    <img src="image/pizza boy.png" id="pizzaboy" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div id="col4" class="row">
+            <div class="col third"></div>
+        </div>
+        <div id="col5" class="row">
+            <div class="col fourth"></div>
+        </div>
+        <div class="row">
+            <div id="col6" class="col fifth"></div>
+        </div>
+        <div class="row">
+            <div class="col sixth">
+                <div class="text">
+                    <pre id="features" class="wow animate__animated  animate__flipInX">
+                 FEATURES &
+                   BENEFITS
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s one">
+                    <img src="image/sticker four.png" id="one" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft two">
+                    <img src="image/sticker five.png" id="two" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight three">
+                    <img src="image/sticker six.png" id="three" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s four">
+                    <img src="image/sticker seven.png" id="four" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s textone">PLANT BASED</div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft texttwo">REAL INGREDIENTS</div>
+                <div class="wow animate__animated  animate__lightSpeedInRight textthree">UNREAL TEXTURE</div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s textfour">BLAND IS BANNED</div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s textpara1">
+                    <pre>
+Plant-Protein yumminess,suitable for
+              everyone.
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  textpara2">
+                    <pre>
+If we don't know exactly what an 
+ ingredient is,we don't include. 
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  textpara3">
+                    <pre>
+It's not meat.No really,it's not!
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s textpara4">
+                    <pre>
+Foodies unite,because here flavour
+              rules.
+                </pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col seventh">
+                <div class="curve">
+                    <svg id="ayush" width="2026px" height="500px">
+                        <path id="path" fill="#042f1a" d="M -90 680 C 190 -220, 1760 -220 , 2132 680"></path>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col eighth">
+                <div class="curvee">
+                    <svg id="ayushh" width="2026px" height="1400px">
+                        <path id="CURVE" fill="transparent" d="M -390 1180 C 700 -100, 1260 -100 , 2432 1180"></path>
+                        <text class="curvetwo" text-anchor="middle">
+                            <textpath class="text_path" href="#CURVE" startoffset="50%">DROLLING YET?</textpath>
+                        </text>
+                    </svg>
+
+                </div>
+
+                <div class="menu1">
+                    <marquee id="marquee" behavior="scroll" direction="left" onmouseover="this.start();"
+                        onmouseout="this.stop();" scrollamount="0">
+                        <p id="CURIOUS">CURIOUS</p>
+                        <p id="PIECES">PIECES</p>
+                        <img id="MENU1PIC" src="image/menu1.png" alt="">
+                    </marquee>
+                </div>
+                <div class="menu2">
+                    <p>CURIOUS</p>
+                    <p id="MINCE">MINCE</p>
+                    <img id="MENU2PIC" src="image/menu2.png" alt="">
+                </div>
+                <div class="menu3">
+                    <P>CURIOUS</P>
+                    <P id="NEGG">NEGG</P>
+                    <img id="MENU3PIC" src="image/menu3.png" alt="">
+                </div>
+                <div class="menu4">
+                    <p id="CURIOUS1">CURIOUS</p>
+                    <p id="TENDERS">TENDERS</p>
+                    <img id="MENU4PIC" src="image/menu4.png" alt="">
+                </div>
+                <div class="menu5">
+                    <p id="CURIOUS2">CURIOUS</p>
+                    <p id="BANGERS">BANGERS</p>
+                    <img id="MENU5PIC" src="image/menu5.png" alt="">
+                </div>
+                <div class="menu6">
+                    <p>CURIOUS</p>
+                    <p id="FILLETS">FILLETS</p>
+                    <img id="MENU6PIC" src="image/menu6.png" alt="">
+                </div>
+
+                <div class="viewall">View All</div>
+                <div class="wow animate__animated  animate__bounceInLeft flower">
+                    <img id="FLOWER" src="image/flower.jpg" alt="">
+                </div>
+                <div class="wow animate__animated  animate__tada flowerpara">
+                    <pre id="flowerparaheading">
+WE'RE GROWING
+MORE THAN
+PLANTS...
+                    </pre>
+                    <pre id="FLOWERPARA">
+We’re here to grow a positive, curious and thoughtful attitude to
+plant-based food. Which is why we put curiosity at the heart of 
+everything we do. So much so, we’ve built our own vertical farm 
+– a near-off-grid, plant playground where we’re researching how 
+to add even more flavour, nutrition and sustainability to the way 
+we all eat.
+                    </pre>
+                </div>
+                <div class="visitsyanfarms">VISIT SYAN FARMS</div>
+                <div id="MENUCONTAINER" class="menucontainer">
+                    <div id="nav1" class="menuone" onclick="closenav1()">
+                        <div class="bar1">
+                            <div class="barchildA">INGREDIENTS</div>
+                            <div class="barchildB">STEPS</div>
+
+                        </div>
+                        <div class="barmince">MINCE</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav2" class="menutwo" onclick="opennav1()">
+                        <img id="menutwoimage" src="image/menutwoimage.jpg" alt="">
+                    </div>
+                    <div id="nav3" class="menuthree" onclick="closenav2()">
+                        <div class="bar2">
+                            <div class="barchildC">INGREDIENTS</div>
+                            <div class="barchildD">STEPS</div>
+
+                        </div>
+                        <div class="barmince">TENDERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav4" class="menufour" onclick="opennav2()">
+                        <img id="menufourimage" src="image/menufourimage.jpg" alt="">
+                    </div>
+                    <div id="nav5" class="menufive" onclick="closenav3()">
+                        <div class="bar3">
+                            <div class="barchildE">INGREDIENTS</div>
+                            <div class="barchildF">STEPS</div>
+
+                        </div>
+                        <div class="barmince">FILLETS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav6" class="menusix" onclick="opennav3()">
+                        <img id="menusiximage" src="image/menusiximage.jpg" alt="">
+                    </div>
+                    <div id="nav7" class="menuseven" onclick="closenav4()">
+                        <div class="bar4">
+                            <div class="barchildG">INGREDIENTS</div>
+                            <div class="barchildH">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+
+                    </div>
+                    <div id="nav8" class="menueight" onclick="opennav4()">
+                        <img id="menueightimage" src="image/menueightimage.jpg" alt="">
+                    </div>
+                    <div id="nav9" class="menunine" onclick="closenav5()">
+                        <div class="bar5">
+                            <div class="barchildI">INGREDIENTS</div>
+                            <div class="barchildJ">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav10" class="menuten" onclick="opennav5()">
+                        <img id="menutenimage" src="image/menutenimage.jpg" alt="">
+                    </div>
+                    <div id="nav11" class="menueleven" onclick="closenav6()">
+                        <div class="bar6">
+                            <div class="barchildK">INGREDIENTS</div>
+                            <div class="barchildL">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav12" class="menutwelve" onclick="opennav6()">
+                        <img id="menutwelveimage" src="image/menutwelveimage.jpg" alt="">
+                    </div>
+                    <div id="nav13" class="menuthirteen" onclick="closenav7()">
+                        <div class="bar7">
+                            <div class="barchildM">INGREDIENTS</div>
+                            <div class="barchildN">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav14" class="menufourteen" onclick="opennav7()">
+                        <img id="menufourteenimage" src="image/menufourteenimage.jpg" alt="">
+                    </div>
+
+
+                </div>
+                <div class="scrollhidder"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col nineth"></div>
+            <div class="letschat"></div>
+        </div>
+        <div class="row">
+            <div class="col tenth">
+                <div class="lastcurve">
+                    <svg id="LASTCURVE" width="2026px" height="500px">
+                        <path id="path" fill="#ff73b5" d="M -90 680 C 190 -220, 1760 -220 , 2132 680"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col eleventh">
+                <div class="curvetext">
+                    <svg id="LASTCURVETEXT" width="2026px" height="1400px">
+                        <path id="CURVETEXT" fill="transparent" d="M -390 1180 C 700 -100, 1260 -100 , 2432 1180">
+                        </path>
+                        <text class="LASTcurvetwo" text-anchor="middle">
+                            <textpath class="lasttext_path" href="#CURVETEXT" startoffset="50%">FEED ME MORE</textpath>
+                        </text>
+                    </svg>
+
+                </div>
+                <input id="fullname" type="text" placeholder="FULL NAME">
+                <input id="email" type="email" placeholder="EMAIL ADDRESS">
+                <div class="signup">SIGN UP</div>
+                <hr id="horizontal">
+                <div class="privacy">
+                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome
+                     - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1
+                     141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12
+                      26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg>
+                    <svg id="linkedin" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                    <p id="policy">PRIVACY POLICY</p>
+
+                </div>
+                <div class="designby">
+                    <svg id="circleC" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
+                    </svg>
+                    <p id="eatcurious2024">EAT CURIOUS 2024 |</p>
+                    <p id="designbyayush">DESIGNED BY AYUSH </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col twelveth p-0">
+                <section class="marquee">
+                    <div class="marquee__inner" aria-hidden="true" ref="inner">
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                        DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                             C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                              L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                               C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                  L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                   C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                    L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                    <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                     C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                     L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                     C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                     C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                     L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                     C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                     C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                     L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                     L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                     C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                     L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE<svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        // let currentScroll = 0;
+        // let isScrollingDown = true;
+
+        // let tween = gsap.to(".marquee__part", { xPercent: -100, repeat: -1, duration: 10, ease: "linear" }).totalProgress(0.5);
+
+
+        // gsap.set(".marquee__inner", { xPercent: -50 });
+
+
+        // window.addEventListener("scroll", function () {
+
+        //     if (window.pageYOffset > currentScroll) {
+        //         isScrollingDown = true;
+        //     } else {
+        //         isScrollingDown = false;
+        //     }
+
+
+        //     gsap.to(tween, {
+        //         timeScale: isScrollingDown ? 1 : -1
+        //     });
+
+        //     currentScroll = window.pageYOffset
+        // });
+
+
+
+        // $(function () {
+        //     $('marquee').mouseover(function () {
+        //         $(this).attr('scrollamount', 10);
+        //     }).mouseout(function () {
+        //         $(this).attr('scrollamount', 0);
+        //     });
+        // });
+
+        // window.onscroll = function () {
+        //     var theta = document.documentElement.scrollTop / 50 % Math.PI;
+
+        //     document.getElementById('SCROLLER').style.transform = 'rotate(' + theta + 'rad)';
+        // }
+
+
+
+
+
+
+    </script>
+    <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
