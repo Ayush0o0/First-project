@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eat curious.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
+    <script src="https://kit.fontawesome.com/bad854670e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy|Oswald&effect=neon">
+    <title>EAT CURIOUS</title>
+</head>
+<body id="body">
+    <div class="container-fluid start">
+        <div id="col1" class="row">
+            <div class="col box">
+                <div class="nav">
+                    <ul class="nav justify-content-center ">
+                        <li class="nav-item">
+                            <a class="nav-link active about" aria-current="page" href="eat curious.html#col3" onclick="about()" style="color: white;">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link product" href="product.html" style="color: white;">PRODUCTS</a>
+                        <li class="nav-item">
+                            <a class="nav-link eatcurious " href="eat curious.html">
+                                <pre id="EATCURIOUS" style="color: white;">    EAT<br>CURIOUS</pre>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link recipes" href="eat curious.html#MENUCONTAINER" onclick="recipe()" style="color: white;">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact" href="contact us.html" tabindex="-1" aria-disabled="true">
+                                <div class="CONTACT" style="color:#042f1a;">CONTACT US</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="col2" class="col first">
+                <div class=" animate__animated  animate__bounceIn meat">MEAT-FREE</div>
+                <!-- <div class="image"> -->
+                <img class=" animate__animated  animate__bounceIn  animate__delay-0.5s" src="image/dish1.png"
+                    id="picture">
+                <!-- </div> -->
+                <div class=" animate__animated  animate__bounceIn  animate__delay-0.8s yourmind">YOUR MIND</div>
+                <div class="scroller">
+                    <img id="SCROLLER" src="image/scroller.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="col3" class="col second">
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ff73b5" fill-opacity="1" d="M0,160L9.2,144C18.5,128,37,
+                    96,55,112C73.8,128,92,192,111,229.3C129.2,267,148,277,166,256C184.6,235,203,181,222,181.3C240,181,258,235,277,229.3C295.4,224,314,160,
+                    332,160C350.8,160,369,224,388,240C406.2,256,425,224,443,218.7C461.5,213,480,235,498,218.7C516.9,203,535,149,554,133.3C572.3,117,591,139,
+                    609,138.7C627.7,139,646,117,665,128C683.1,139,702,181,720,202.7C738.5,224,757,224,775,202.7C793.8,181,812,139,831,144C849.2,149,868,203,
+                    886,213.3C904.6,224,923,192,942,176C960,160,978,160,997,176C1015.4,192,1034,224,1052,240C1070.8,256,1089,256,1108,240C1126.2,224,1145,192,
+                    1163,165.3C1181.5,139,1200,117,1218,133.3C1236.9,149,1255,203,1274,224C1292.3,245,1311,235,1329,234.7C1347.7,235,1366,245,1385,
+                    245.3C1403.1,245,1422,235,1431,229.3L1440,224L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,
+                    1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,
+                    320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,
+                    320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,
+                    320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,
+                    320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"></path>
+                </svg>
+                <div class="curiousbyname">
+                    <p class="firstheading">
+                        CURIOUS... BY NAME, BY
+                        NATURE
+                    </p>
+                    <pre class="firstpara">
+                         It’s what inspires us to whip up, throw
+                         together, tear, shake, and break the rules – 
+                         on a mission to redefine food for a new
+                         generation.</pre>
+                    <img src="image/pizza boy.png" id="pizzaboy" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div id="col4" class="row">
+            <div class="col third"></div>
+        </div>
+        <div id="col5" class="row">
+            <div class="col fourth"></div>
+        </div>
+        <div class="row">
+            <div id="col6" class="col fifth"></div>
+        </div>
+        <div class="row">
+            <div class="col sixth">
+                <div class="text">
+                    <pre id="features" class="wow animate__animated  animate__flipInX">
+                 FEATURES &
+                   BENEFITS
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s one">
+                    <img src="image/sticker four.png" id="one" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft two">
+                    <img src="image/sticker five.png" id="two" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight three">
+                    <img src="image/sticker six.png" id="three" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s four">
+                    <img src="image/sticker seven.png" id="four" alt="">
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s textone">PLANT BASED</div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft texttwo">REAL INGREDIENTS</div>
+                <div class="wow animate__animated  animate__lightSpeedInRight textthree">UNREAL TEXTURE</div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s textfour">BLAND IS BANNED</div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  animate__delay-1s textpara1">
+                    <pre>
+Plant-Protein yumminess,suitable for
+              everyone.
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInLeft  textpara2">
+                    <pre>
+If we don't know exactly what an 
+ ingredient is,we don't include. 
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  textpara3">
+                    <pre>
+It's not meat.No really,it's not!
+                </pre>
+                </div>
+                <div class="wow animate__animated  animate__lightSpeedInRight  animate__delay-1s textpara4">
+                    <pre>
+Foodies unite,because here flavour
+              rules.
+                </pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col seventh">
+                <div class="curve">
+                    <svg id="ayush" width="2026px" height="500px">
+                        <path id="path" fill="#042f1a" d="M -90 680 C 190 -220, 1760 -220 , 2132 680"></path>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col eighth">
+                <div class="curvee">
+                    <svg id="ayushh" width="2026px" height="1400px">
+                        <path id="CURVE" fill="transparent" d="M -390 1180 C 700 -100, 1260 -100 , 2432 1180"></path>
+                        <text class="curvetwo" text-anchor="middle">
+                            <textpath class="text_path" href="#CURVE" startoffset="50%">DROLLING YET?</textpath>
+                        </text>
+                    </svg>
+
+                </div>
+
+                <div class="menu1">
+                    <marquee id="marquee" behavior="scroll" direction="left" onmouseover="this.start();"
+                        onmouseout="this.stop();" scrollamount="0">
+                        <p id="CURIOUS">CURIOUS</p>
+                        <p id="PIECES">PIECES</p>
+                        <img id="MENU1PIC" src="image/menu1.png" alt="">
+                    </marquee>
+                </div>
+                <div class="menu2">
+                    <p>CURIOUS</p>
+                    <p id="MINCE">MINCE</p>
+                    <img id="MENU2PIC" src="image/menu2.png" alt="">
+                </div>
+                <div class="menu3">
+                    <P>CURIOUS</P>
+                    <P id="NEGG">NEGG</P>
+                    <img id="MENU3PIC" src="image/menu3.png" alt="">
+                </div>
+                <div class="menu4">
+                    <p id="CURIOUS1">CURIOUS</p>
+                    <p id="TENDERS">TENDERS</p>
+                    <img id="MENU4PIC" src="image/menu4.png" alt="">
+                </div>
+                <div class="menu5">
+                    <p id="CURIOUS2">CURIOUS</p>
+                    <p id="BANGERS">BANGERS</p>
+                    <img id="MENU5PIC" src="image/menu5.png" alt="">
+                </div>
+                <div class="menu6">
+                    <p>CURIOUS</p>
+                    <p id="FILLETS">FILLETS</p>
+                    <img id="MENU6PIC" src="image/menu6.png" alt="">
+                </div>
+
+                <div class="viewall">View All</div>
+                <div class="wow animate__animated  animate__bounceInLeft flower">
+                    <img id="FLOWER" src="image/flower.jpg" alt="">
+                </div>
+                <div class="wow animate__animated  animate__tada flowerpara">
+                    <pre id="flowerparaheading">
+WE'RE GROWING
+MORE THAN
+PLANTS...
+                    </pre>
+                    <pre id="FLOWERPARA">
+We’re here to grow a positive, curious and thoughtful attitude to
+plant-based food. Which is why we put curiosity at the heart of 
+everything we do. So much so, we’ve built our own vertical farm 
+– a near-off-grid, plant playground where we’re researching how 
+to add even more flavour, nutrition and sustainability to the way 
+we all eat.
+                    </pre>
+                </div>
+                <div class="visitsyanfarms">VISIT SYAN FARMS</div>
+                <div id="MENUCONTAINER" class="menucontainer">
+                    <div id="nav1" class="menuone" onclick="closenav1()">
+                        <div class="bar1">
+                            <div class="barchildA">INGREDIENTS</div>
+                            <div class="barchildB">STEPS</div>
+
+                        </div>
+                        <div class="barmince">MINCE</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav2" class="menutwo" onclick="opennav1()">
+                        <img id="menutwoimage" src="image/menutwoimage.jpg" alt="">
+                    </div>
+                    <div id="nav3" class="menuthree" onclick="closenav2()">
+                        <div class="bar2">
+                            <div class="barchildC">INGREDIENTS</div>
+                            <div class="barchildD">STEPS</div>
+
+                        </div>
+                        <div class="barmince">TENDERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav4" class="menufour" onclick="opennav2()">
+                        <img id="menufourimage" src="image/menufourimage.jpg" alt="">
+                    </div>
+                    <div id="nav5" class="menufive" onclick="closenav3()">
+                        <div class="bar3">
+                            <div class="barchildE">INGREDIENTS</div>
+                            <div class="barchildF">STEPS</div>
+
+                        </div>
+                        <div class="barmince">FILLETS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav6" class="menusix" onclick="opennav3()">
+                        <img id="menusiximage" src="image/menusiximage.jpg" alt="">
+                    </div>
+                    <div id="nav7" class="menuseven" onclick="closenav4()">
+                        <div class="bar4">
+                            <div class="barchildG">INGREDIENTS</div>
+                            <div class="barchildH">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+
+                    </div>
+                    <div id="nav8" class="menueight" onclick="opennav4()">
+                        <img id="menueightimage" src="image/menueightimage.jpg" alt="">
+                    </div>
+                    <div id="nav9" class="menunine" onclick="closenav5()">
+                        <div class="bar5">
+                            <div class="barchildI">INGREDIENTS</div>
+                            <div class="barchildJ">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav10" class="menuten" onclick="opennav5()">
+                        <img id="menutenimage" src="image/menutenimage.jpg" alt="">
+                    </div>
+                    <div id="nav11" class="menueleven" onclick="closenav6()">
+                        <div class="bar6">
+                            <div class="barchildK">INGREDIENTS</div>
+                            <div class="barchildL">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav12" class="menutwelve" onclick="opennav6()">
+                        <img id="menutwelveimage" src="image/menutwelveimage.jpg" alt="">
+                    </div>
+                    <div id="nav13" class="menuthirteen" onclick="closenav7()">
+                        <div class="bar7">
+                            <div class="barchildM">INGREDIENTS</div>
+                            <div class="barchildN">STEPS</div>
+
+                        </div>
+                        <div class="barmince">BANGERS</div>
+                        <div class="na">N/A</div>
+                    </div>
+                    <div id="nav14" class="menufourteen" onclick="opennav7()">
+                        <img id="menufourteenimage" src="image/menufourteenimage.jpg" alt="">
+                    </div>
+
+
+                </div>
+                <div class="scrollhidder"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col nineth"></div>
+            <div class="letschat"></div>
+        </div>
+        <div class="row">
+            <div class="col tenth">
+                <div class="lastcurve">
+                    <svg id="LASTCURVE" width="2026px" height="500px">
+                        <path id="path" fill="#ff73b5" d="M -90 680 C 190 -220, 1760 -220 , 2132 680"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col eleventh">
+                <div class="curvetext">
+                    <svg id="LASTCURVETEXT" width="2026px" height="1400px">
+                        <path id="CURVETEXT" fill="transparent" d="M -390 1180 C 700 -100, 1260 -100 , 2432 1180">
+                        </path>
+                        <text class="LASTcurvetwo" text-anchor="middle">
+                            <textpath class="lasttext_path" href="#CURVETEXT" startoffset="50%">FEED ME MORE</textpath>
+                        </text>
+                    </svg>
+
+                </div>
+                <input id="fullname" type="text" placeholder="FULL NAME">
+                <input id="email" type="email" placeholder="EMAIL ADDRESS">
+                <div class="signup">SIGN UP</div>
+                <hr id="horizontal">
+                <div class="privacy">
+                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome
+                     - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1
+                     141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12
+                      26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg>
+                    <svg id="linkedin" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                    <p id="policy">PRIVACY POLICY</p>
+
+                </div>
+                <div class="designby">
+                    <svg id="circleC" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#042f1a"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
+                    </svg>
+                    <p id="eatcurious2024">EAT CURIOUS 2024 |</p>
+                    <p id="designbyayush">DESIGNED BY AYUSH </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col twelveth p-0">
+                <section class="marquee">
+                    <div class="marquee__inner" aria-hidden="true" ref="inner">
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                        DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                             C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                              L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                               C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                  L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                   C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                    L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                    <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                     C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                     L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                     C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                     C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                     L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                     C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                     C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                     L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                     L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                     C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                     L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                        <div class="marquee__part">
+                            <pre id="bottombartext">
+                      DAIRY FREE<svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                         C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                          L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                           C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                            C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                            L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                            C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                            C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                             L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                              L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                               C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   PACKED WITH FLAVOUR   <svg id="bottomcloud" fill="#042f1a" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M 9 6 L 9 9.09375 C 8.367188 9.222656 7.773438 9.496094 7.25 9.84375 L 5.0625 7.625 L 3.625 9.0625 L 5.84375 11.25
+                                 C 5.496094 11.773438 5.222656 12.367188 5.09375 13 L 2 13 L 2 15 L 5.125 15 C 5.253906 15.628906 5.507813 16.199219 5.84375 16.71875
+                                 L 3.625 18.9375 L 4.25 19.5625 C 4.113281 20.019531 4 20.5 4 21 C 4 23.757813 6.242188 26 9 26 L 25 26 C 27.757813 26 30 23.757813 30 21
+                                 C 30 18.980469 28.789063 17.179688 26.96875 16.40625 C 26.6875 13.988281 24.65625 12.097656 22.1875 12 C 21.125 10.152344 19.164063 9 17 9
+                                 C 16.773438 9 16.5625 9.007813 16.34375 9.03125 L 14.9375 7.625 L 12.75 9.84375 C 12.226563 9.507813 11.628906 9.253906 11 9.125 
+                                 L 11 6 Z M 10 11 C 10.765625 11 11.445313 11.285156 11.96875 11.75 C 11.707031 12.152344 11.472656 12.597656 11.3125 13.0625 
+                                 C 9.730469 13.332031 8.460938 14.542969 8.09375 16.09375 C 8.039063 16.101563 7.988281 16.113281 7.9375 16.125 
+                                 C 7.378906 15.582031 7 14.847656 7 14 C 7 12.332031 8.332031 11 10 11 Z M 17 11 C 18.605469 11 20.054688 11.960938 20.6875 13.4375
+                                 L 20.96875 14.125 L 21.875 14.03125 C 21.917969 14.023438 21.953125 14 22 14 C 23.652344 14 24.996094 15.351563 25 16.9375
+                                 L 24.96875 17.90625 L 25.75 18.09375 C 27.082031 18.433594 28 19.636719 28 21 C 28 22.652344 26.652344 24 25 24 L 9 24
+                                 C 7.347656 24 6 22.652344 6 21 C 6 19.347656 7.347656 18 9 18 L 10 18 L 10 17 C 10 15.898438 10.894531 15.003906 11.90625 15
+                                 L 12.90625 15.0625 L 13.09375 14.21875 C 13.46875 12.359375 15.101563 11 17 11 Z"></path></svg>   100%PLANT BASED</pre>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+       
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
